@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes Animaux{% endblock %}
+
+{% block monTitre %}La liste des animaux{% endblock %}
+
+{% block body %}
+
+    {% for animal in animaux %}
+    {{ animal.nom }}
+    {% endfor %}
+{% endblock %}
